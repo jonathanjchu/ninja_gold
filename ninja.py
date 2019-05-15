@@ -1,15 +1,9 @@
 from flask import Flask, render_template, request, redirect, session
 import datetime, random
+import location
 
 app = Flask(__name__)
 app.secret_key = "WMWeQ*x&u*ldQN06Bv^nt2o&Bk*wJ%He"
-
-# game_data = {
-#     'farm': {
-#         min: 10,
-#         max: 20
-#     }
-# }
 
 @app.route("/")
 def index():
