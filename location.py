@@ -27,9 +27,10 @@ class NinjaGold():
     def __init__(self):
         self.data = []
         self.data.append(Location("farm", 10, 20, 0, 0, "farming", ""))
-        self.data.append(Location("cave", 5, 10, 0.01, 0, "exploring cave", "injured in cave"))
-        self.data.append(Location("house", 15, 40, 0.4, 0, "breaking and entering house", "arrested by police"))
+        self.data.append(Location("cave", 5, 10, 0.01, 0, "exploring cave", "injured in cave, paid {} to doctor"))
+        self.data.append(Location("house", 40, 80, 0.4, 0, "breaking and entering into house", "busted by police, paid {} to bribe police"))
         self.data.append(Location("casino", -50, 50, 0, 0, "gambling at casino", ""))
+        self.data.append(Location("bank", 100, 800, 0.8, 5, "robbing bank", "gunned down by police, paid {} to bribe police and pay hospital bills"))
 
 class GoldDigResult():
     def __init__(self, is_success=True, income=0, output=""):
